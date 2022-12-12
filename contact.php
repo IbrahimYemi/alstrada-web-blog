@@ -1,4 +1,8 @@
 <?php
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Headers: *");
+header('Access-Control-Allow-Methods: GET, POST');
+header("Access-Control-Allow-Headers: X-Requested-With");
 include 'contact_config.php';
 error_reporting (E_ALL ^ E_NOTICE);
 $post = (!empty($_POST)) ? true : false;
