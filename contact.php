@@ -17,7 +17,7 @@ if($post)
         $error[] = 'Please enter your name.';
     }
     
-    // Check email
+    // Check email  
     if(!$email)
     {
         $error[] = 'Please enter an e-mail address.';
