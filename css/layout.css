@@ -13,6 +13,20 @@
 
 /* Common Styles ------------------------------------------ */
 
+::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 10px;
+}
+:-webkit-scrollbar-track {
+  background: #ddd;
+  border-radius: 10px;
+}
+
 html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
