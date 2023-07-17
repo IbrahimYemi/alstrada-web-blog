@@ -2,13 +2,18 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	
-	<title>Rudermann Responsive HTML Template</title>
+	<!-- linkedin sdk -->
+	<script src="https://platform.linkedin.com/in.js" type="text/javascript">
+		lang: en_US
+	</script>
+	  
+    <title>Alstrada | Blog</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<meta name="HandheldFriendly" content="true">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script src="https://kit.fontawesome.com/8b0f1bd379.js" crossorigin="anonymous"></script>
 	
 	<!-- Import CSS -->
 	<link rel="stylesheet" href="css/base.css">
@@ -21,63 +26,43 @@
 <body>
 
 	<!-- Start Header -->
-	<header>
+    <header>
 		<div class="container">
-			<div class="row">
-				<div class="span5">
-					<div id="logo">
-						<a href="index.html">Rudermann</a>
-						<p>A portfolio template for agency</p>
-					</div>
-				</div>
-				<div class="span7">
-					<!-- Start Navigation -->
-					<nav>
-						<ul id="navigation" class="pull-right hidden-phone">
-							<li class="submenu">
-								<a href="index.html">Home</a>
-								<ul class="dropmenu-active">
-									<li><a href="index-cute.html">3D Cute Slider</a></li>
-									<li><a href="index-slider.html">Full width slider</a></li>
-								</ul>
-							</li>
-							<li class="submenu">
-								<a href="about.html">Pages</a>
-								<ul class="dropmenu-active">
-									<li><a href="about.html">About</a></li>
-									<li><a href="services.html">Services</a></li>
-									<li><a href="contact.html">Contact</a></li>
-									<li><a href="404.html">Error 404</a></li>
-									<li><a href="countdown.html">Countdown</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="portfolio.html">Portfolio</a>
-							</li>
-							<li>
-								<a class="active" href="blog.html">Blog</a>
-							</li>
-							<li>
-								<a href="contact.html">Contact</a>
-							</li>
-							<li class="last submenu">
-								<a href="shortcodes.html">Features</a>
-								<ul class="dropmenu-active">
-									<li><a href="shortcodes.html">Shortcodes</a></li>
-									<li><a href="icons.html">Icons</a></li>
-									<li><a href="columns.html">Columns</a></li>
-									<li><a href="retina.html">Retina Ready</a></li>
-									<li><a href="responsive.html">Responsive</a></li>
-									<li><a href="cute-slider.html">Cute Slider</a></li>
-								</ul>
-							</li>
-						</ul>
-					</nav>
-					<!-- End Navigation -->
-				</div>
+		  <div class="row">
+			<div class="span5">
+			  <div id="logo">
+				<a href="index.html">ALSTRADA</a>
+				<p>The Data Monetization Company</p>
+			  </div>
 			</div>
+			<div class="span7">
+			  <!-- Start Navigation -->
+			  <nav>
+				<ul id="navigation" class="pull-right hidden-phone">
+				  <li class="menu">
+					<a class="active" href="index.html">Home</a>
+				  </li>
+				  <li class="menu">
+					<a href="services.html">Services and Products</a>
+				  </li>
+				  <li>
+					<a href="blog.html">Blog</a>
+				  </li>
+				  <li>
+					<a href="about.html">About us</a>
+				  </li>
+				 
+				  <li>
+					<a href="contact.html">Contact</a>
+				  </li>
+				 
+				</ul>
+			  </nav>
+			  <!-- End Navigation -->
+			</div>
+		  </div>
 		</div>
-	</header>
+	  </header>
 	<!-- End Header -->
 		
 	<!-- Start Title -->	
@@ -95,12 +80,11 @@
 			    	<div class="dropmenu-active">
 				    	<ul class="option-set" data-option-key="filter">
 					    	<li><a class="drop-selected" href="#">All tags</a></li>
-							<li><a href="#">Office</a></li>
-							<li><a href="#">Website</a></li>
+							<li><a href="#">Data</a></li>
+							<li><a href="#">CDO</a></li>
 							<li><a href="#">Strategy</a></li>
-							<li><a href="#">London</a></li>
-							<li><a href="#">Conference</a></li>
-							<li><a href="#">Internet</a></li>
+							<li><a href="#">Financial</a></li>
+							<li><a href="#">Culture</a></li>
 							<li><a href="#">Work</a></li>
 							<li><a href="#">Future</a></li>
 							<li><a href="#">Lifestyle</a></li>
@@ -109,7 +93,7 @@
 				</div>
 			</div>
 			<div class="span2 hidden-phone">
-				<p><span class="number">27</span>posts</p>
+				<p><span id="blogs-number" class="number">00</span>posts</p>
 			</div>
 		</div>
 		<div class="row">
@@ -117,88 +101,14 @@
 		</div>
 	</section>
 	<!-- End Title -->
-					
-	<!-- Start Blog Post -->			
-	<article class="blog-post container">
-		<div class="row">
-			<div class="span9 offset3">
-				<h4><a href="blog-detail.html">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, Consectetur, adipisci velit...</a></h4>
-			</div>
-		</div>
-		<div class="row">
-			<div class="span3 post-info">
-				<div class="date">September 1st, 2012</div>
-				<div class="tags">
-					<a class="tag" href="#">digital</a>
-					<a class="tag" href="#">strategy</a>
-					<a class="tag" href="#">web</a>
-					<a class="tag" href="#">strategy</a>
-					<a class="tag" href="#">web</a>
-				</div>
-				<div class="comments"><i class="icon-comment"></i> 37 comments</div>
-				<div class="up-title hidden-phone">Share this:</div>
-				<img src="img/share.png" alt=""><!-- Change this image to your code of social buttons -->
-			</div>
-			<div class="span9">
-				<div class="preview-img">
-					<img src="img/slider/image3.jpg" alt="" />
-					<div class="img-caption">
-						<p>Award winning digital agency. We bring a personal and effective approach to every project we work on, which is why our clients love us and why they keep coming back.</p>
-					</div>
-				</div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam est lectus, mattis in sodales non, congue sollicitudin ante. Vestibulum ut dolor mauris, sed venenatis est. Phasellus sodales placerat nisl, ut lacinia enim tincidunt vel. Mauris tempor augue a sem condimentum non ullamcorper libero rhoncus.</p>
-				<p>Donec molestie, orci ac pharetra fermentum, ipsum quam commodo arcu, non fringilla nisl ipsum vel enim. Pellentesque sagittis sagittis sem. Cras pharetra tempor felis interdum fringilla. Vivamus vitae dolor non magna imperdiet dictum. Pellentesque rhoncus vulputate felis, nec consequat risus tristique quis. Nullam libero erat, gravida nec sollicitudin non, consectetur in mauris.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam est lectus, mattis in sodales non, congue sollicitudin ante. Vestibulum ut dolor mauris, sed venenatis est. Phasellus sodales placerat nisl, ut lacinia enim tincidunt vel. Mauris tempor augue a sem condimentum non ullamcorper libero rhoncus.</p>
-			</div>
-		</div>	
-		<div class="row">
-			<hr class="span12 dotted">
-		</div>
-	</article>
-	<!-- End Blog Post -->
-	
-	<!-- Start Blog Post -->			
-	<article class="blog-post container">
-		<div class="row">
-			<div class="span9 offset3">
-				<h4><a href="blog-detail.html">Our favorite London office. Many photos.</a></h4>
-			</div>
-		</div>
-		<div class="row">
-			<div class="span3 post-info">
-				<div class="date">March 1st, 2012</div>
-				<div class="tags">
-					<a class="tag" href="#">office</a>
-					<a class="tag" href="#">photos</a>
-					<a class="tag" href="#">london</a>
-				</div>
-				<div class="comments"><i class="icon-comment"></i> 12 comments</div>
-				<div class="up-title hidden-phone">Share this:</div>
-				<img src="img/share.png" alt=""><!-- Change this image to your code of social buttons -->
-			</div>
-			<div class="span9">
-				<div class="preview-img">
-					<img src="img/blog/slider/image1.jpg" alt="" />
-				</div>
-				<p>Ut tempus, dui vitae auctor iaculis, tellus erat tempor justo, ut ultrices ante nibh adipiscing risus. Sed nec mollis purus. Nunc in lacinia justo. Aliquam pretium nibh eget urna elementum rhoncus. Sed sit amet sem orci. Curabitur ipsum tellus, iaculis eget imperdiet sed, pretium ultrices odio. Mauris augue nisl, imperdiet at viverra at, porta nec felis. Etiam lacinia vulputate scelerisque.</p>
-				<p>Mauris sagittis vehicula augue et rhoncus. Pellentesque rhoncus posuere nulla, sit amet euismod mi auctor quis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla facilisi. Nullam sodales nulla non est porttitor tempus. Nulla facilisi. Praesent nisi nisi, mollis et consequat in, feugiat ut metus.</p>
-			</div>
-		</div>	
-		<div class="row">
-			<hr class="span12 dotted">
-		</div>
-	</article>
-	<!-- End Blog Post -->
-	
-	<!-- Start Twitter Post -->
+
+	<!-- StartHighlight Qoute -->
 	<article class="blog-post container scaleimg">
 		<div class="row">
 			<div class="span12">
 				<a href="#" class="twitter-post">
-					<span class="username">@username</span>
-					<p>This week, mentions of the word “donate” is at a 180-day peak; the phrase “donate blood” is at a 365-day peak.</p>
-					<span class="tweet-date">March 1st, 2012</span>
-					<i class="icon-twitter"></i>
+					<p>Welcome to the new dawn of data, ALSTRADA, where we are on a mission to bring you award-winning data leadership, globally recognized data professionals, data thought leaders, best-selling authors, with unparalleled experience of 20 - 30+ years, to make your data sing any business note you please.</p>
+					<span class="tweet-date">July 1st, 2023</span>
 				</a>
 			</div>		
 		</div>
@@ -206,194 +116,36 @@
 			<hr class="span12 dotted">
 		</div>			
 	</article>
-	<!-- End Twitter Post -->
-	
-	<!-- Start Blog Post -->			
-	<article class="blog-post container">
-		<div class="row">
-			<div class="span9 offset3">
-				<h4><a href="blog-detail.html">Donec molestie, orci ac pharetra fermentum, ipsum quam commodo arcu</a></h4>
-			</div>
-		</div>
-		<div class="row">
-			<div class="span3 post-info">
-				<div class="date">March 1st, 2012</div>
-				<div class="tags">
-					<a class="tag" href="#">digital</a>
-					<a class="tag" href="#">strategy</a>
-					<a class="tag" href="#">web</a>
-					<a class="tag" href="#">strategy</a>
-					<a class="tag" href="#">web</a>
-				</div>
-				<div class="comments"><i class="icon-comment"></i> 1 comment</div>
-				<div class="up-title hidden-phone">Share this:</div>
-				<img src="img/share.png" alt=""><!-- Change this image to your code of social buttons -->
-			</div>
-			<div class="span9">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam est lectus, mattis in sodales non, congue sollicitudin ante. Vestibulum ut dolor mauris, sed venenatis est. Phasellus sodales placerat nisl, ut lacinia enim tincidunt vel. Mauris tempor augue a sem condimentum non ullamcorper libero rhoncus.</p>
-				<p>Donec molestie, orci ac pharetra fermentum, ipsum quam commodo arcu, non fringilla nisl ipsum vel enim. Pellentesque sagittis sagittis sem. Cras pharetra tempor felis interdum fringilla. Vivamus vitae dolor non magna imperdiet dictum. Pellentesque rhoncus vulputate felis, nec consequat risus tristique quis. Nullam libero erat, gravida nec sollicitudin non, consectetur in mauris.</p>
-				<p class="gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam est lectus, mattis in sodales non, congue sollicitudin ante. Vestibulum ut dolor mauris, sed venenatis est. Phasellus sodales placerat nisl, ut lacinia enim tincidunt vel. Mauris tempor augue a sem condimentum non ullamcorper libero rhoncus.</p>
-			</div>
-		</div>	
-		<div class="row">
-			<hr class="span12 dotted">
-		</div>
-	</article>
-	<!-- End Blog Post -->
-	
-	<!-- Start Blog Post -->			
-	<article class="blog-post container">
-		<div class="row">
-			<div class="span9 offset3">
-				<h4><a href="blog-detail.html">Mauris sagittis vehicula augue et rhoncus. Pellentesque rhoncus posuere nulla, sit amet euismod mi auctor quis.</a></h4>
-			</div>
-		</div>
-		<div class="row">
-			<div class="span3 post-info">
-				<div class="date">March 1st, 2012</div>
-				<div class="tags">
-					<a class="tag" href="#">digital</a>
-					<a class="tag" href="#">strategy</a>
-					<a class="tag" href="#">web</a>
-					<a class="tag" href="#">strategy</a>
-					<a class="tag" href="#">web</a>
-				</div>
-				<div class="comments"><i class="icon-comment"></i> 1 comment</div>
-				<div class="up-title hidden-phone">Share this:</div>
-				<img src="img/share.png" alt=""><!-- Change this image to your code of social buttons -->
-			</div>
-			<div class="span9">
-				<p>Donec molestie, orci ac pharetra fermentum, ipsum quam commodo arcu, non fringilla nisl ipsum vel enim. Pellentesque sagittis sagittis sem. Cras pharetra tempor felis interdum fringilla. Vivamus vitae dolor non magna imperdiet dictum. Pellentesque rhoncus vulputate felis, nec consequat tristique quis. Nullam libero erat, gravida nec sollicitudin non, consectetur in mauris.</p>
-				<img src="img/blog/image3.jpg" alt="" />
-				<p class="gray">Donec molestie, orci ac pharetra fermentum, ipsum quam commodo arcu, non fringilla nisl ipsum vel enim. Pellentesque sagittis sagittis sem. Cras pharetra tempor felis interdum fringilla. Vivamus vitae dolor non magna imperdiet dictum. Pellentesque rhoncus vulputate felis, nec consequat risus tristique quis. Nullam libero erat, gravida nec sollicitudin non, consectetur in mauris.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam est lectus, mattis in sodales non, congue sollicitudin ante. Vestibulum ut dolor mauris, sed venenatis est. Phasellus sodales placerat nisl, ut lacinia enim tincidunt vel. Mauris tempor augue a sem condimentum non ullamcorper libero rhoncus.</p>
-			</div>
-		</div>	
-		<div class="row">
-			<hr class="span12 dotted">
-		</div>
-	</article>
-	<!-- End Blog Post -->
+	<!-- EndHighlight Qoute -->
 
-	<!-- Start Twitter Post -->
-	<article class="blog-post container scaleimg">
-		<div class="row">
-			<div class="span12">
-				<a href="#" class="twitter-post">
-					<span class="username">@username</span>
-					<p>All the our new Support team members are sure rocking through the tickets. I've never seen lower numbers. Well done everyone!</p>
-					<span class="tweet-date">March 1st, 2012</span>
-					<i class="icon-twitter"></i>
-				</a>
-			</div>		
-		</div>
-		<div class="row">
-			<hr class="span12 dotted">
-		</div>			
-	</article>
-	<!-- End Twitter Post -->
-	
-	<!-- Start Blog Post -->			
-	<article class="blog-post container">
-		<div class="row">
-			<div class="span9 offset3">
-				<h4><a href="blog-detail.html">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, Consectetur, adipisci velit...</a></h4>
-			</div>
-		</div>
-		<div class="row">
-			<div class="span3 post-info">
-				<div class="date">September 1st, 2012</div>
-				<div class="tags">
-					<a class="tag" href="#">digital</a>
-					<a class="tag" href="#">strategy</a>
-					<a class="tag" href="#">web</a>
-					<a class="tag" href="#">strategy</a>
-					<a class="tag" href="#">web</a>
-				</div>
-				<div class="comments"><i class="icon-comment"></i> 37 comments</div>
-				<div class="up-title hidden-phone">Share this:</div>
-				<img src="img/share.png" alt=""><!-- Change this image to your code of social buttons -->
-			</div>
-			<div class="span9">
-				<div class="preview-img">
-					<img src="img/slider/image1.jpg" alt="" />
-					<div class="img-caption">
-						<p>Award winning digital agency. We bring a personal and effective approach to every project we work on, which is why our clients love us and why they keep coming back.</p>
-					</div>
-				</div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam est lectus, mattis in sodales non, congue sollicitudin ante. Vestibulum ut dolor mauris, sed venenatis est. Phasellus sodales placerat nisl, ut lacinia enim tincidunt vel. Mauris tempor augue a sem condimentum non ullamcorper libero rhoncus.</p>
-				<p>Donec molestie, orci ac pharetra fermentum, ipsum quam commodo arcu, non fringilla nisl ipsum vel enim. Pellentesque sagittis sagittis sem. Cras pharetra tempor felis interdum fringilla. Vivamus vitae dolor non magna imperdiet dictum. Pellentesque rhoncus vulputate felis, nec consequat risus tristique quis. Nullam libero erat, gravida nec sollicitudin non, consectetur in mauris.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam est lectus, mattis in sodales non, congue sollicitudin ante. Vestibulum ut dolor mauris, sed venenatis est. Phasellus sodales placerat nisl, ut lacinia enim tincidunt vel. Mauris tempor augue a sem condimentum non ullamcorper libero rhoncus.</p>
-			</div>
-		</div>	
-		<div class="row">
-			<hr class="span12 dotted">
-		</div>
-	</article>
-	<!-- End Blog Post -->
-	
-	<!-- Start Blog Post -->			
-	<article class="blog-post container">
-		<div class="row">
-			<div class="span9 offset3">
-				<h4><a href="blog-detail.html">Our favorite London office. Many photos.</a></h4>
-			</div>
-		</div>
-		<div class="row">
-			<div class="span3 post-info">
-				<div class="date">March 1st, 2012</div>
-				<div class="tags">
-					<a class="tag" href="#">office</a>
-					<a class="tag" href="#">photos</a>
-					<a class="tag" href="#">london</a>
-				</div>
-				<div class="comments"><i class="icon-comment"></i> 12 comments</div>
-				<div class="up-title hidden-phone">Share this:</div>
-				<img src="img/share.png" alt=""><!-- Change this image to your code of social buttons -->
-			</div>
-			<div class="span9">
-				<div class="preview-img">
-					<img src="img/blog/slider/image3.jpg" alt="" />
-				</div>
-				<p>Ut tempus, dui vitae auctor iaculis, tellus erat tempor justo, ut ultrices ante nibh adipiscing risus. Sed nec mollis purus. Nunc in lacinia justo. Aliquam pretium nibh eget urna elementum rhoncus. Sed sit amet sem orci. Curabitur ipsum tellus, iaculis eget imperdiet sed, pretium ultrices odio. Mauris augue nisl, imperdiet at viverra at, porta nec felis. Etiam lacinia vulputate scelerisque.</p>
-				<p>Mauris sagittis vehicula augue et rhoncus. Pellentesque rhoncus posuere nulla, sit amet euismod mi auctor quis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla facilisi. Nullam sodales nulla non est porttitor tempus. Nulla facilisi. Praesent nisi nisi, mollis et consequat in, feugiat ut metus.</p>
-			</div>
-		</div>	
-		<div class="row">
-			<hr class="span12 dotted">
-		</div>
-	</article>
-	<!-- End Blog Post -->
+	<!-- Start Blog Section -->
+	<section id="blog-section">
 
-		
-	<!-- Start Ajax Loader -->
-	<div id="loading">
-		<a href="#">Load more items...</a>
-	</div>
-	<!-- End Ajax Loader -->
+	</section>
+	<!-- End Blog Section -->
 	
 	<!-- Start Footer -->
-	<footer class="container">
-		<div class="row">
-			<div class="span12">
-				<p>© 2012 <a href="index.html">Rudermann</a>. Powered by WordPress.<br>
-					<span class="theme-author"><a href="http://themes.tvda.eu" target="_blank">Ruderman Template</a> by <a href="http://themes.tvda.eu" target="_blank">TVDA</a>.</span>
-				</p>
-				<!-- Start Footer Navigation -->
-				<nav>
-					<ul class="pull-right hidden-phone">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="shrotcodes.html">Shortcodes</a></li>
-						<li><a href="icons.html">Icons</a></li>
-						<li><a href="retina.html">Retina Ready</a></li>
-						<li><a href="responsive.html">Responsive</a></li>
-						<li><a href="cute-slider.html">Cute Slider</a></li>
-					</ul>
-				</nav>
-				<!-- End Footer Navigation -->
-			</div>
-		</div>
-	</footer>
+  <footer class="container">
+	<div class="row">
+	  <div class="span12">
+		<p>
+		  © 2022 <a href="index.html">Alstrada LLC</a>. all rights reserved<br />
+		  <span class="theme-author">
+		</p>
+		<!-- Start Footer Navigation -->
+		<nav class="hidden-phone">
+		  <ul class="pull-right">
+			<li><a class="active" href="index.html">Home</a></li>
+			<li><a href="services.html">Services and Products</a></li>
+			<li><a href="blog.html">Blog</a></li>
+			<li><a href="about.html">About Us</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		  </ul>
+		</nav>
+		<!-- End Footer Navigation -->
+	  </div>
+	</div>
+  </footer>
 	<!-- End Footer -->
 	
 	<!-- jQuery -->	
@@ -411,6 +163,24 @@
 	<script src="js/jquery.isotope.min.js"></script><!-- Isotope Portfolio -->
 	<script src="js/mql.js"></script><!-- Isotope Fix -->
 	<script src="js/settings.js"></script> <!-- Settings for JS Plugins -->
+    <script src="js/blog-related/blogpost.js"></script>
+    <!-- javascript for blogpost -->
+	<script>
+
+		function shareOnTwitter(blogUrl, blogTitle) {
+		  // Construct the Twitter Web Intent URL
+		  var intentUrl =
+			"https://twitter.com/intent/tweet?url=" +
+			encodeURIComponent(blogUrl) +
+			"&text=" +
+			encodeURIComponent(blogTitle);
+		
+		  // Open the Twitter Web Intent in a new window
+		  window.open(intentUrl);
+		}
+
+	</script>
+	  
 	
 </body>
 

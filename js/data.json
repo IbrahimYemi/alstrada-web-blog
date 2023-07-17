@@ -1,0 +1,26 @@
+{
+    "questions": [
+      {
+        "question": "Who are we?",
+        "answer": "We are a company dedicated to providing innovative solutions."
+      },
+      {
+        "question": "What do we do?",
+        "answer": "We offer a wide range of services to meet your needs."
+      },
+      {
+        "question": "Our expertise?",
+        "answer": "We specialize in various fields such as technology, marketing, and design."
+      },
+      {
+        "question": "Channel of communication?",
+        "answer": "You can reach us through email, phone, or our website."
+      },
+      {
+        "question": "Our heritage?",
+        "answer": "Our company has a rich history spanning several decades."
+      }
+    ],
+    "defaultResponse": "I'm sorry, I cannot process your request. Here are some available questions: Who are we?, What do we do?, Our expertise?, Channel of communication?, Our heritage?"
+  }
+  

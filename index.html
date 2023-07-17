@@ -34,38 +34,60 @@
     <header>
       <div class="container">
         <div class="row">
-          <div class="span5">
-            <div id="logo">
-              <a href="index.html">ALSTRADA</a>
-              <p>The Data Monetization Company</p>
-            </div>
-          </div>
-          <div class="span7">
-            <!-- Start Navigation -->
-            <nav>
-              <ul id="navigation" class="pull-right hidden-phone">
-                <li class="menu">
-                  <a class="active" href="index.html">Home</a>
-                </li>
-                <li class="menu">
-                  <a href="services.html">Services and Products</a>
-                </li>
-                <li>
-                  <a href="about.html">About us</a>
-                </li>
-               
-                <li>
-                  <a href="contact.html">Contact</a>
-                </li>
-               
-              </ul>
-            </nav>
-            <!-- End Navigation -->
+        <div class="span5">
+          <div id="logo">
+          <a href="index.html">ALSTRADA</a>
+          <p>The Data Monetization Company</p>
           </div>
         </div>
+        <div class="span7">
+          <!-- Start Navigation -->
+          <nav>
+          <ul id="navigation" class="pull-right hidden-phone">
+            <li class="menu">
+            <a class="active" href="index.html">Home</a>
+            </li>
+            <li class="menu">
+            <a href="services.html">Services and Products</a>
+            </li>
+            <li>
+            <a href="blog.html">Blog</a>
+            </li>
+            <li>
+            <a href="about.html">About us</a>
+            </li>
+           
+            <li>
+            <a href="contact.html">Contact</a>
+            </li>
+           
+          </ul>
+          </nav>
+          <!-- End Navigation -->
+        </div>
+        </div>
       </div>
-    </header>
+      </header>
     <!-- End Header -->
+
+    <!-- chatbox pop up -->
+    <section id="chatbox">
+      <section style="display: none;" id="chatbox-container" class="swirl-chatbox">
+        <span class="close-chatbox" id="close-button">x</span>
+        <div class="chat-container">
+          <iframe src="https://www.youtube.com/embed/RttT5lIyoUI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <div id="chatbox-field">
+            <p id="welcome-msg" class="chat-bot-message"></p>
+          </div>
+          <div id="input-container">
+            <input type="text" id="message-input" placeholder="Type your message" />
+            <button id="send-button">Send</button>
+          </div>
+        </div>
+      </section>
+      <span class="open-chatbox" id="open-button">Hello!</span>
+    </section>
+    <!-- chatbox end -->
 
     <!-- Start Cute Slider -->
     <section class="cute-section">
@@ -365,24 +387,25 @@
 
     <!-- Start Footer -->
   <footer class="container">
-      <div class="row">
-        <div class="span12">
-          <p>
-            © 2022 <a href="index.html">Alstrada LLC</a>. all rights reserved<br />
-            <span class="theme-author">
-          </p>
-          <!-- Start Footer Navigation -->
-          <nav class="hidden-phone">
-            <ul class="pull-right">
-              <li><a class="active" href="index.html">Home</a></li>
-              <li><a href="services.html">Services and Products</a></li>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </nav>
-          <!-- End Footer Navigation -->
-        </div>
+    <div class="row">
+      <div class="span12">
+      <p>
+        © 2022 <a href="index.html">Alstrada LLC</a>. all rights reserved<br />
+        <span class="theme-author">
+      </p>
+      <!-- Start Footer Navigation -->
+      <nav class="hidden-phone">
+        <ul class="pull-right">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="services.html">Services and Products</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- End Footer Navigation -->
       </div>
+    </div>
     </footer>
     <!-- End Footer -->
 
@@ -439,5 +462,7 @@
     <!-- Flickr Feed Setup-->
     <script src="js/settings.js"></script>
     <!-- Settings for JS Plugins -->
+    <script src="js/chatbox.js"></script>
+    <!-- javascript for chatbox -->
   </body>
 </html>
