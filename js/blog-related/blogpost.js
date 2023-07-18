@@ -31,7 +31,7 @@ function renderBlogPosts(blogPosts) {
                   .map((tag) => `<a class="tag">${tag}</a>`)
                   .join("")}
               </div>
-              <div class="up-title hidden-phone">Share this:
+              <div class="up-title">Share this:
               <a class="linkedIn-share" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.alstrada.com/blog-details&title=${encodeURIComponent(blogPost.title)}" title="LinkedIn" target="_blank"><i style="margin: 2px; font-size: 25px" class="fab fa-linkedin"></i></a>
                 <a class="twitter-share" href="#" title="Twitter" onclick="shareOnTwitter('${link}/blog-detail.html?slug=${
       blogPost.slug

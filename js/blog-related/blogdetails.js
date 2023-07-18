@@ -73,7 +73,7 @@ function fetchBlogData() {
               <div class="row"><hr class="dotted span12"></div>
               <div class="row">
                 <div class="span4">
-                  <div class="up-title hidden-phone">Share this:
+                  <div class="up-title">Share this:
                   <a class="linkedIn-share" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.alstrada.com/blog-details&title=${encodeURIComponent(blogPost.title)}" title="LinkedIn" target="_blank"><i style="margin: 2px; font-size: 25px" class="fab fa-linkedin"></i></a>
                     <a class="twitter-share" href="#" title="Twitter" onclick="shareOnTwitter('${link}/blog-detail.html?slug=${
           blogPost.slug
