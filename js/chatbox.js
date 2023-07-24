@@ -44,7 +44,7 @@ function typeEffect(element, text, delay) {
 openButton.addEventListener("click", function () {
   container.style.display = "block";
   const textToType =
-    "Alstrada: Hello, hope you're having a great day? Welcome to Alstrada, the Data Monetization Company! How may I help you today?";
+    "Alstrada: Hello, hope you're having a great day! Welcome to Alstrada, the Data Monetization Company! How may I help you today?";
   const typingSpeed = 100; // Adjust the speed in milliseconds (e.g., 100 for 100ms)
 
 //   welcomeDiv.textContent = ""; // Clear existing text before starting the typewriter effect
