@@ -50,7 +50,7 @@ function fetchBlogData() {
                     <small>${blogPost.qoutes.author}</small>
                   </blockquote>
                   <!-- End Big Blockquote -->
-                  
+
                   <p>${blogPost.content[3]}</p>
                   <p>${blogPost.content[4]}</p>
                   <div class="row video-blog">
@@ -74,12 +74,12 @@ function fetchBlogData() {
               <div class="row">
                 <div class="span4">
                   <div class="up-title">Share this:
-                  <a class="linkedIn-share" href="https://www.linkedin.com/sharing/share-offsite/?url=https://alstrada-blog-sample.netlify.app/blog-detail.html?slug=${encodeURIComponent(
-                    blogPost.title
+                  <a class="linkedIn-share" href="https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
+                    `https://alstrada-blog-sample.netlify.app/blog-detail.html?slug=${blogPost.slug}`
                   )}" title="LinkedIn" target="_blank"><i style="margin: 2px; font-size: 25px" class="fab fa-linkedin"></i></a>
-                    <a class="twitter-share" href="#" title="Twitter" onclick="shareOnTwitter('${link}/blog-detail.html?slug=${
-          blogPost.slug
-        }', '${
+                    <a class="twitter-share" href="#" title="Twitter" onclick="shareOnTwitter('https://alstrada-blog-sample.netlify.app/blog-detail.html?slug=${
+                      blogPost.slug
+                    }', '${
           blogPost.title
         }')"><i style="margin: 2px; font-size: 25px" class="fab fa-twitter"></i></a>
                   </div>
