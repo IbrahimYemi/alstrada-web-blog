@@ -32,10 +32,14 @@ function renderBlogPosts(blogPosts) {
                   .join("")}
               </div>
               <div class="up-title">Share this:
-              <a class="linkedIn-share" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.alstrada.com/blog-details&title=${encodeURIComponent(blogPost.title)}" title="LinkedIn" target="_blank"><i style="margin: 2px; font-size: 25px" class="fab fa-linkedin"></i></a>
+              <a class="linkedIn-share" href="https://www.linkedin.com/sharing/share-offsite/?url=https://alstrada-blog-sample.netlify.app/blog-detail.html?slug=${encodeURIComponent(
+                blogPost.title
+              )}" title="LinkedIn" target="_blank"><i style="margin: 2px; font-size: 25px" class="fab fa-linkedin"></i></a>
                 <a class="twitter-share" href="#" title="Twitter" onclick="shareOnTwitter('${link}/blog-detail.html?slug=${
       blogPost.slug
-    }', '${blogPost.title}')"><i style="margin: 2px; font-size: 25px" class="fab fa-twitter"></i></a>
+    }', '${
+      blogPost.title
+    }')"><i style="margin: 2px; font-size: 25px" class="fab fa-twitter"></i></a>
               </div>
             </div>
             <div class="span9">
